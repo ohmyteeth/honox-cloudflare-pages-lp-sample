@@ -1,0 +1,29 @@
+{
+  "name": "honox-cloudflare-pages-lp-sample",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --mode client && vite build",
+    "preview": "wrangler pages dev ./dist",
+    "deploy": "$npm_execpath run build && wrangler pages deploy ./dist"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "hono": "^4.6.9",
+    "honox": "^0.1.26",
+    "tailwindcss": "^3.4.14"
+  },
+  "devDependencies": {
+    "@hono/vite-ssg": "^0.1.0",
+    "@mdx-js/rollup": "^3.1.0",
+    "@natsuneko-laboratory/honox-mdx-island": "^0.1.1",
+    "remark-frontmatter": "^5.0.0",
+    "remark-mdx-frontmatter": "^5.0.0",
+    "vite": "^5.4.10",
+    "wrangler": "^3.84.1"
+  }
+}
